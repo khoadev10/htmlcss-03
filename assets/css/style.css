@@ -387,7 +387,7 @@ a {
 
 /* ================= Dentist =================*/
 .dentists {
-    margin-bottom: 170px;
+    margin-bottom: 265px;
 }
 
 .dentists .section-heading {
@@ -399,16 +399,17 @@ a {
     margin: 38px auto 70px;
 }
 
+/* list dentist */
 .dentists__list {
     display: flex;
     gap: 19px;
 }
 
-.dentist {
+.dentist-item {
     width: 23%;
 }
 
-.dentist figure {
+.dentist-item figure {
     padding-top: 19px;
     border-radius: 6px;
     background: #eaf6ff;
@@ -435,6 +436,7 @@ a {
     line-height: 1.86;
 }
 
+/* button control */
 .dentists-action {
     display: flex;
     justify-content: center;
@@ -460,4 +462,49 @@ a {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     cursor: pointer;
+}
+
+/* ================= Mobile App =================*/
+.app {
+    margin-bottom: 170px;
+    border-radius: 4px;
+    background: #2e80ce;
+    display: flex;
+}
+
+/* Left */
+.app__left {
+    position: relative;
+    width: 43.9%;
+    flex-shrink: 0;
+}
+
+.app__img {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+/* Right */
+.app__right {
+    padding: 76px 70px 75px 0;
+}
+
+.app__heading {
+    width: 489px;
+    color: #fff;
+}
+
+.app__desc {
+    margin: 18px 0 38px;
+    color: #fff;
+}
+
+.app__row {
+    display: flex;
+    align-items: center;
+}
+
+.install-app:first-child {
+    margin-right: 28px;
 }
