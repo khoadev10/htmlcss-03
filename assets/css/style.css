@@ -128,7 +128,7 @@ a {
     border-radius: 22px;
 }
 
-/* ================= Heager =================*/
+/* ================= Header =================*/
 .hero {
     padding: 68px 0 110px;
     background: #10375c;
@@ -200,7 +200,7 @@ a {
     object-fit: cover;
 }
 
-/* ================= Heager =================*/
+/* ================= Service =================*/
 .service {
     padding: 170px 0;
 }
@@ -253,8 +253,8 @@ a {
 }
 
 .service-item:hover .service-item__icon {
-    color: #FFF;
-    background-color: #2E80CE;
+    color: #fff;
+    background-color: #2e80ce;
 }
 
 .service-item__icon {
@@ -267,7 +267,7 @@ a {
     height: 60px;
     border-radius: 50%;
     color: var(--highlight-color);
-    background-color: #EFF6FD;
+    background-color: #eff6fd;
     transition: 0.25s;
 }
 
@@ -284,4 +284,58 @@ a {
     font-size: 1.6rem;
     font-weight: 300;
     line-height: 1.75;
+}
+
+/* ================= How it works =================*/
+.work {
+    padding: 100px 0;
+    background: #f6fbff;
+}
+
+.work .section-desc {
+    margin-top: 18px;
+    margin-bottom: 86px;
+    width: 468px;
+}
+
+.work__list {
+    display: flex;
+    gap: 30px;
+}
+
+.work-item {
+    width: 31.6%;
+    padding: 43px 42px;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.25s;
+}
+
+.work-item:hover {
+ transform: translateY(-16px);
+ border-color: #2e80ce;
+}
+
+.work-item:hover .work-item__more {
+    color: #2e80ce;
+}
+
+.work-item__title {
+    margin: 18px 0 28px;
+    color: var(--highlight-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.work-item__sub-tlitle, .work-item__more {
+    color: #575f66;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.work-item__more {
+    display: inline-block;
+    margin-top: 18px;
 }
