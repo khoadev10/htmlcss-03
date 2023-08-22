@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2e80ce;
+    --highlight-color: #10375c;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
+
+/* ================= Common =================*/
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 24px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    width: 205px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: Sora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    color: #fff;
+    background: #2e80ce;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ================= Heager =================*/
+.header {
+    background-color: var(--highlight-color);
+    padding-top: 22px;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -22px;
+    z-index: 9;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logos img:first-child {
+    margin-right: 6px;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__item + .navbar__item {
+    margin-left: 42px;
+}
+
+.navbar__link:hover {
+    color: #fff;
+}
+
+.navbar__item.active {
+    list-style: disc;
+    color: #fff;
+}
+
+.navbar__item.active a {
+    color: #fff;
+}
+
+.navbar__link,
+.link-log-in {
+    color: #c9d2da;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.btn-sign-up {
+    margin-left: 28px;
+    width: 104px;
+    height: 44px;
+    font-size: 1.6rem;
+    line-height: 44px;
+    border-radius: 22px;
+}
+
+/* ================= Heager =================*/
+.hero {
+    padding: 68px 0 110px;
+    background: #10375c;
+}
+
+.hero__row {
+    display: flex;
+}
+
+/* Hero Right */
+.hero__right {
+    padding-top: 60px;
+    width: 44.2%;
+}
+
+.hero__heading {
+    margin-bottom: 22px;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -1.4px;
+}
+
+.hero__desc {
+    margin-bottom: 38px;
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero__action {
+    display: flex;
+    align-items: center;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+/* Hero Left */
+.hero__left {
+    width: 45.6%;
+    margin-left: auto;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+}
+
+.hero__img--right {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero__img--left {
+    margin: -6px;
+    width: 210px;
+    height: 410px;
+    border-radius: 0px 6px 6px 0px;
+    object-fit: cover;
+}
