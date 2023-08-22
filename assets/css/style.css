@@ -47,6 +47,21 @@ a {
     opacity: 0.9;
 }
 
+.section-heading {
+    color: var(--highlight-color);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
 /* ================= Heager =================*/
 .header {
     background-color: var(--highlight-color);
@@ -161,7 +176,6 @@ a {
 
 /* Hero Left */
 .hero__left {
-    width: 45.6%;
     margin-left: auto;
 }
 
@@ -179,9 +193,95 @@ a {
 }
 
 .hero__img--left {
-    margin: -6px;
+    margin-left: -6px;
     width: 210px;
     height: 410px;
     border-radius: 0px 6px 6px 0px;
     object-fit: cover;
+}
+
+/* ================= Heager =================*/
+.service {
+    padding: 170px 0;
+}
+
+.service__heading {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.service__desc {
+    margin: auto;
+    width: 468px;
+    text-align: center;
+}
+
+.service__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.service__left {
+    width: 48.7%;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service__right {
+    padding-left: 130px;
+}
+
+.service__list {
+    padding: 35px 0 55px;
+}
+
+.service-item {
+    display: flex;
+    padding: 20px 61px 21px 22px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.service-item:hover {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.service-item:hover .service-item__icon {
+    color: #FFF;
+    background-color: #2E80CE;
+}
+
+.service-item__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 19px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: var(--highlight-color);
+    background-color: #EFF6FD;
+    transition: 0.25s;
+}
+
+.service-item__title {
+    margin-bottom: 8px;
+    color: var(--highlight-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.service-item__sub-title {
+    color: #575f66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
 }
