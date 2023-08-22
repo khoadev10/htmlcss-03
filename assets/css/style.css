@@ -552,8 +552,12 @@ a {
 .blog-item {
     width: 270px;
     border-radius: 12px;
-    border: 1px solid #e8ebee;
     background: #fff;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.blog-item:hover {
+    border: 1px solid #e8ebee;
 }
 
 .blog-item__img {
@@ -589,4 +593,24 @@ a {
 
 .blog-item__more:hover {
     color: var(--primary-color);
+}
+
+/* ================= Contact =================*/
+.contact {
+    margin-bottom: 170px;
+    padding: 100px 0;
+    text-align: center;
+    background: #f6fbff;
+}
+
+.contact-line {
+    margin: 18px auto;
+    width: 136px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.contact__desc {
+    width: 617px;
+    margin: 0 auto 38px;
 }
