@@ -341,7 +341,7 @@ a {
     margin-top: 18px;
 }
 
-/* ================= How it works =================*/
+/* ================= Feature =================*/
 .feature {
     padding: 170px 0;
 }
@@ -377,10 +377,87 @@ a {
 
 .feature__right {
     width: 51.3%;
-    padding: 82px 0 0 130px;
+    padding: 82px 0 83px 130px;
 }
 
 .feature__right .section-desc {
     margin-top: 18px;
     margin-bottom: 38px;
+}
+
+/* ================= Dentist =================*/
+.dentists {
+    margin-bottom: 170px;
+}
+
+.dentists .section-heading {
+    text-align: center;
+}
+
+.btn-meet-dentist {
+    display: block;
+    margin: 38px auto 70px;
+}
+
+.dentists__list {
+    display: flex;
+    gap: 19px;
+}
+
+.dentist {
+    width: 23%;
+}
+
+.dentist figure {
+    padding-top: 19px;
+    border-radius: 6px;
+    background: #eaf6ff;
+}
+
+.dentist__img {
+    display: block;
+    object-fit: cover;
+}
+
+.dentist__name {
+    margin-top: 12px;
+    color: #10375c;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.dentist__info {
+    color: #575f66;
+    text-align: center;
+    font-size: rem;
+    font-weight: 300;
+    line-height: 1.86;
+}
+
+.dentists-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 38px;
+}
+
+.dentists-action__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    color: #575f66;
+    border-radius: 36px;
+    border: 1px solid #575f66;
+}
+
+.dentists-action__btn:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    cursor: pointer;
 }
