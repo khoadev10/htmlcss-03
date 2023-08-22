@@ -313,8 +313,8 @@ a {
 }
 
 .work-item:hover {
- transform: translateY(-16px);
- border-color: #2e80ce;
+    transform: translateY(-16px);
+    border-color: #2e80ce;
 }
 
 .work-item:hover .work-item__more {
@@ -329,7 +329,8 @@ a {
     line-height: 1.38;
 }
 
-.work-item__sub-tlitle, .work-item__more {
+.work-item__sub-tlitle,
+.work-item__more {
     color: #575f66;
     font-weight: 300;
     line-height: 1.75;
@@ -338,4 +339,48 @@ a {
 .work-item__more {
     display: inline-block;
     margin-top: 18px;
+}
+
+/* ================= How it works =================*/
+.feature {
+    padding: 170px 0;
+}
+
+.feature__row {
+    display: flex;
+}
+
+.feature__left {
+    position: relative;
+    display: flex;
+    width: 48.7%;
+}
+
+.feature__img {
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__img:nth-child(1) {
+    width: 512px;
+    height: 370px;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+}
+
+.feature__img:nth-child(2) {
+    position: absolute;
+    top: 121px;
+    right: 0;
+    width: 332px;
+    height: 370px;
+}
+
+.feature__right {
+    width: 51.3%;
+    padding: 82px 0 0 130px;
+}
+
+.feature__right .section-desc {
+    margin-top: 18px;
+    margin-bottom: 38px;
 }
